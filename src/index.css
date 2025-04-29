@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f5f5f5;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Navigation styles */
+.navbar-brand {
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* New dashboard styles */
+.dashboard-header {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef) !important;
+  border-left: 4px solid #007bff;
+}
+
+.dashboard-header h2 {
+  color: #343a40;
+  display: flex;
+  align-items: center;
+}
+
+.inspection-table {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header styling */
+.table-header {
+  background: linear-gradient(to right, #e9ecef, #f2f2f2);
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.table-header th {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.inspection-table th {
+  font-weight: 600;
+  color: #495057;
+}
+
+.inspection-form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Filter styles */
+.filter-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.filter-card .card-header {
+  padding: 12px 20px;
+}
+
+.filter-select {
+  height: 40px;
+  border-radius: 6px;
+  border-color: #ced4da;
+  transition: all 0.2s;
+}
+
+.filter-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filter-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-btn svg {
+  margin-right: 5px;
+}
+
+/* Badge styles for status */
+.badge {
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+  color: #212529 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-bottom: 30px;
+}
+
+.pagination .page-item .page-link {
+  color: #007bff;
+  border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}
+
+/* Action button styles */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-btn {
+  border-radius: 4px;
+  transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btn-outline-primary.action-btn {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary.action-btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
+
+.btn-outline-danger.action-btn {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger.action-btn:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220,53,69,0.2);
+}
+
+/* Style for editable fields */
+.editable-field:not([disabled]) {
+  background-color: white !important;
+  cursor: pointer !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* Override Bootstrap's disabled styling */
+.form-control:not(:disabled),
+.form-select:not(:disabled) {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+/* For date input fields specifically */
+input[type="date"]:not(:disabled) {
+  background-color: white !important;
+  opacity: 1 !important;
+  color: #000 !important;
+}
+
+/* Add these styles to your existing index.css file */
+
+/* Ensure enabled date and select fields are properly styled */
+.editable-field:not([disabled]) {
+    background-color: white !important;
+    cursor: pointer !important;
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+/* Override Bootstrap's disabled styling */
+.form-control:not(:disabled),
+.form-select:not(:disabled) {
+    background-color: white !important;
+    opacity: 1 !important;
+}
+
+/* For date input fields specifically */
+input[type="date"]:not(:disabled) {
+    background-color: white !important;
+    opacity: 1 !important;
+    color: #000 !important;
+}
+
+/* Make info icons more visible */
+.form-label + svg {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Improve modal styling */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Add styling for the Get Coordinates button */
+.btn-outline-secondary svg {
+    margin-right: 4px;
+}
